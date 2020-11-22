@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Table_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vYT-PL-EeD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellProvinsi" rowHeight="120" id="Lrf-sJ-wbZ" userLabel="cellProvinsi" customClass="ProvinsiTableViewCell" customModule="Table_View" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lrf-sJ-wbZ" id="BRQ-N7-gPM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Owd-Gu-tLF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jakarta" translatesAutoresizingMaskIntoConstraints="NO" id="ACl-Pw-MfQ">
+                                                    <rect key="frame" x="20" y="25" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="Q9o-1w-yvb"/>
+                                                        <constraint firstAttribute="width" constant="70" id="n4Z-RO-Ayy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jakarta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-B5-EYE">
+                                                    <rect key="frame" x="90" y="50" width="292" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5dC-B5-EYE" secondAttribute="trailing" id="1n3-UX-g6n"/>
+                                                <constraint firstAttribute="bottom" secondItem="5dC-B5-EYE" secondAttribute="bottom" constant="58.5" id="2Kj-kF-Njb"/>
+                                                <constraint firstAttribute="bottom" secondItem="5dC-B5-EYE" secondAttribute="bottom" constant="58.5" id="5VB-bC-uEs"/>
+                                                <constraint firstAttribute="trailing" secondItem="5dC-B5-EYE" secondAttribute="trailing" constant="32" id="5pq-ml-zl9"/>
+                                                <constraint firstAttribute="bottom" secondItem="5dC-B5-EYE" secondAttribute="bottom" constant="58.5" id="75N-jd-1K2"/>
+                                                <constraint firstItem="Owd-Gu-tLF" firstAttribute="leading" secondItem="BRQ-N7-gPM" secondAttribute="leading" id="8Y1-5V-sFr"/>
+                                                <constraint firstItem="ACl-Pw-MfQ" firstAttribute="leading" secondItem="BRQ-N7-gPM" secondAttribute="leading" constant="20" id="982-Lv-4Zz"/>
+                                                <constraint firstItem="5dC-B5-EYE" firstAttribute="top" secondItem="Owd-Gu-tLF" secondAttribute="bottom" id="AUz-DX-MIL"/>
+                                                <constraint firstAttribute="trailing" secondItem="5dC-B5-EYE" secondAttribute="trailing" constant="32" id="DbZ-r7-I0c"/>
+                                                <constraint firstItem="5dC-B5-EYE" firstAttribute="top" secondItem="BRQ-N7-gPM" secondAttribute="top" constant="41" id="DyT-Gk-9CA"/>
+                                                <constraint firstAttribute="trailing" secondItem="Owd-Gu-tLF" secondAttribute="trailing" id="EqK-JJ-HYY"/>
+                                                <constraint firstItem="ACl-Pw-MfQ" firstAttribute="centerY" secondItem="BRQ-N7-gPM" secondAttribute="centerY" id="WB4-B7-EWT"/>
+                                                <constraint firstItem="5dC-B5-EYE" firstAttribute="leading" secondItem="ACl-Pw-MfQ" secondAttribute="trailing" id="cxT-Td-F6R"/>
+                                                <constraint firstAttribute="trailing" secondItem="5dC-B5-EYE" secondAttribute="trailing" constant="32" id="eSG-Sl-zVI"/>
+                                                <constraint firstItem="5dC-B5-EYE" firstAttribute="top" secondItem="BRQ-N7-gPM" secondAttribute="top" constant="41" id="mKr-di-xrp"/>
+                                                <constraint firstItem="ACl-Pw-MfQ" firstAttribute="centerY" secondItem="BRQ-N7-gPM" secondAttribute="centerY" id="rZj-EX-mxF"/>
+                                                <constraint firstItem="5dC-B5-EYE" firstAttribute="top" secondItem="BRQ-N7-gPM" secondAttribute="top" constant="41" id="tMe-13-XIV"/>
+                                                <constraint firstItem="Owd-Gu-tLF" firstAttribute="top" secondItem="BRQ-N7-gPM" secondAttribute="top" id="zfb-Ej-Kg4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="provinsiImg" destination="ACl-Pw-MfQ" id="fik-74-ebt"/>
+                                            <outlet property="provinsiLbl" destination="5dC-B5-EYE" id="ZEh-Wh-1lc"/>
+                                            <outlet property="provinsiView" destination="Owd-Gu-tLF" id="Hhs-Fh-Kcq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vYT-PL-EeD" secondAttribute="bottom" id="7T7-vv-oc4"/>
+                            <constraint firstItem="vYT-PL-EeD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CyK-Xh-jLv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vYT-PL-EeD" secondAttribute="trailing" id="XBL-wj-y7y"/>
+                            <constraint firstItem="vYT-PL-EeD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bIg-7P-jRB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="provinsiTableView" destination="vYT-PL-EeD" id="jCJ-SE-CT8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jakarta" width="52.333332061767578" height="52.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
